@@ -1,3 +1,25 @@
 group 'com.ixnah'
 version '1.0-SNAPSHOT'
 
+subprojects {
+  apply plugin:'java'
+
+  group = 'com.ixnah.blog'
+  version = '0.0.1-SNAPSHOT'
+  sourceCompatibility = '11'
+
+  repositories {
+    maven { url 'https://maven.aliyun.com/repository/central' }
+  }
+
+  dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.18'
+    annotationProcessor 'org.projectlombok:lombok:1.18.18'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+  }
+
+  test {
+    useJUnitPlatform()
+  }
+}
