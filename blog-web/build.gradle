@@ -18,11 +18,12 @@ configurations {
 dependencies {
   implementation project(":blog-common")
 
-  implementation 'org.springframework.boot:spring-boot-starter-data-rest'
-  implementation 'org.springframework.boot:spring-boot-starter-web'
-  implementation 'org.flywaydb:flyway-core'
-  implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.4'
+  implementation 'uk.org.lidalia:sysout-over-slf4j:1.0.2'
   implementation 'org.springframework.session:spring-session-core'
+  implementation 'org.springframework.boot:spring-boot-starter-web'
+  implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+  implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.4'
+  implementation 'org.flywaydb:flyway-core'
   runtimeOnly 'mysql:mysql-connector-java'
   testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
