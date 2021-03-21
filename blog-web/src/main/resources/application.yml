@@ -3,3 +3,5 @@ spring:
     url: jdbc:mysql://localhost/hanxi_blog?useUnicode=true&characterEncoding=utf-8
     username: root
     password: root
+swagger:
+  enable: true

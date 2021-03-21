@@ -19,6 +19,7 @@ dependencies {
   implementation project(":blog-common")
 
   implementation 'uk.org.lidalia:sysout-over-slf4j:1.0.2'
+  implementation 'io.springfox:springfox-boot-starter:3.0.0'
   implementation 'org.springframework.session:spring-session-core'
   implementation 'org.springframework.boot:spring-boot-starter-web'
   implementation 'org.springframework.boot:spring-boot-starter-data-rest'
